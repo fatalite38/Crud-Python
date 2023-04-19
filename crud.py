@@ -41,37 +41,37 @@ if conexao.is_connected():
   print('Conexao MySQL foi encerrada!')
 
 #Create(INSERT)
-email = "carlosronaldo@hotmail.com"
-senha = "0808"
-nome = "Carlos Ronaldo"
-idade = 22
+email = ""
+senha = ""
+nome = ""
+idade =
 comando = f"INSERT INTO usuarios (email,senha,nome,idade) VALUES('{email}', '{senha}', '{nome}', {idade})"
 cursor.execute(comando)
 conexao.commit()
 
 #Create(INSERT)
-email = "marcia_torrent@hotmail.com"
-senha = "1011"
-nome = "Marcia Torrent"
-idade = 35
+email = ""
+senha = ""
+nome = ""
+idade =
 comando = f"INSERT INTO usuarios (email,senha,nome,idade) VALUES('{email}', '{senha}', '{nome}', {idade})"
 cursor.execute(comando)
 conexao.commit()
 
 #Create(INSERT)
-email = "lucasfelipe@gmail.com"
-senha = "1128"
-nome = "Lucas Felipe da Silva"
-idade = 38
+email = ""
+senha = ""
+nome = ""
+idade =
 comando = f"INSERT INTO usuarios (email,senha,nome,idade) VALUES('{email}', '{senha}', '{nome}', {idade})"
 cursor.execute(comando)
 conexao.commit()
 
 #Create(INSERT) - insert com o .format
-email = "cobaia@outlook.com"
-senha = "1515"
-nome = "Marcos Panico"
-idade = 58
+email = ""
+senha = ""
+nome = ""
+idade =
 comando = "INSERT INTO usuarios (email,senha,nome,idade) VALUES('{}', '{}', '{}', {})".format(email,senha,nome,idade)
 cursor.execute(comando)
 conexao.commit()
@@ -84,22 +84,22 @@ for linha in linhas:
   print(linha)
 
 #Select de apenas 1 registro
-id = 1
+id =
 comando = "SELECT * FROM usuarios WHERE id_user = {}".format(id)
 cursor.execute(comando)
 linha = cursor.fetchone()
 print(linha)
 
 #Update -- alterar um registro
-senha = "1514"
-idade = 25
-id = 1
+senha = ""
+idade =
+id =
 comando = "UPDATE usuarios SET senha = '{}', idade = {} WHERE id_user = {}".format(senha,idade,id)
 cursor.execute(comando)
 conexao.commit()
 
 #Delete um registro
-id = 4
+id =
 comando = "DELETE FROM usuarios where id_user = {}".format(id)
 cursor.execute(comando)
 conexao.commit()
@@ -200,12 +200,12 @@ db.inserirDados()
 
 db.selecionarDados()
 
-db.selecionarApenasUmDado(3)
+db.selecionarApenasUmDado()
 
-db.alterarDados('', '', '', 48, 2)
+db.alterarDados()
 
 db.loginUsuario()
 
-db.deletarDados(2)
+db.deletarDados()
 
 db.desconectarBanco()
