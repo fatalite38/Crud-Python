@@ -12,7 +12,7 @@ Para executar este código, é necessário ter instalado:
 
 1. **Instalação do MySQL Server:**
     - O código fornece comandos para instalação do MySQL Server.
-    - Após a instalação, é configurada a senha do usuário root como '1210'.
+    - Após a instalação, foi configurada a senha do usuário root como '1210'.
 
 2. **Instalação do pacote de conexão MySQL para Python:**
     - Utiliza-se o comando `pip` para instalar o pacote `mysql-connector-python`.
